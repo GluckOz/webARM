@@ -41,7 +41,8 @@ const Sidebar = () => {
     <>
      { /* Desktop Sidebar */ }
       <div className={`${isOpenMobile ? 'hidden' : 'flex'} 
-      resizable min-w-[140px] max-w-[440px] w-[300px] justify-between p-2 h-[90%] bg-whitedefaultBackground dark:bg-darkdefaultBackground flex flex-col gap-y-6 rounded-md border border-neutral-600`}>
+      resizable min-w-[140px] max-w-[440px] w-[300px] justify-between p-2 h-[90%] bg-whitedefaultBackground dark:bg-darkdefaultBackground 
+      flex flex-col gap-y-6 rounded-md border border-neutral-600`}>
         <Header />
         <div className="flex flex-row gap-x-2 items-center">
           <SwiperHandle type="circle">
@@ -59,7 +60,7 @@ const Sidebar = () => {
 
       { /* Mobile Sidebar */ }
       <div className={`${isOpenMobile ? 'flex' : 'hidden'} 
-      w-[54px] p-2 h-[90%] bg-neutral-950 justify-between flex-col gap-y-6 items-center`}>
+      w-[54px] p-2 h-[90%] bg-neutral-950 justify-between flex-col gap-y-6 items-center border border-neutral-600`}>
         <Header isMobile />
         <div className="flex flex-row gap-x-2 items-center">
           <SwiperHandle type="circle">

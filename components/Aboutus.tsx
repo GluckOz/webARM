@@ -26,7 +26,7 @@ const AboutusPanel: React.FC<AboutusPanelProps> = ({ isMobile }) => {
   const router = useRouter();
 
   const listElement = [
-    { name: "О нас", href: "", icon: BookHeadphones },
+    { name: "О нас", href: "about", icon: BookHeadphones },
     { name: "Конфиденциальность", href: "policy", icon: MdPolicy }
   ]
 
